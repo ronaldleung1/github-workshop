@@ -3,7 +3,7 @@ import React from 'react'
 // basic react component
 export default function Card() {
   return (
-    <div className="bg-slate-100 rounded-xl p-8">
+    <div className="bg-slate-100 rounded-xl p-8 m-4">
       <img className="w-24 h-24 rounded-full mx-auto" src="https://avatars.githubusercontent.com/u/57511576?v=4" alt="profile picture" width="384" height="512"></img>
       <div className="pt-6 text-center space-y-4">
         <blockquote>
