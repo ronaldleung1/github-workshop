@@ -36,10 +36,11 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          Presented at{' '}
+          <span className="ml-1 mr-0.5">
+            <Image src="/hillshacks.png" alt="hillsHacks VI" width={16} height={16} />
           </span>
+          hillsHacks
         </a>
       </footer>
     </div>
