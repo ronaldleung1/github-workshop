@@ -23,10 +23,10 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center max-w-4xl">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card username="googol88" name="Ronald" quote="Hello world!"/>
+          <Card username="googol88" name="Ronald" quote="Hello world!"/>
+          <Card username="googol88" name="Ronald" quote="Hello world!"/>
+          <Card username="googol88" name="Ronald" quote="Hello world!"/>
         </div>
       </main>
 
