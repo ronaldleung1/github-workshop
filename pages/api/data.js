@@ -6,12 +6,12 @@ export default async (_req, res) => {
   let data = [];
 
   const files = fs.readdirSync(
-    path.join(__dirname, "..", "..", "..", "people")
+    path.join(process.cwd(), "people")
   );
   console.log(process.cwd())
   files.forEach((file) => {
     const content = fs.readFileSync(
-      path.join(__dirname, "..", "..", "..", "people", file),
+      path.join(process.cwd(), "people"),
       "utf8"
     );
 
