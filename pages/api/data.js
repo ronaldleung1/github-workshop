@@ -10,12 +10,10 @@ export default async (_req, res) => {
   );
   console.log(process.cwd())
   files.forEach((file) => {
-    console.log(file)
     const content = fs.readFileSync(
       path.join(process.cwd(), "people", file),
       "utf8"
     );
-
     data.push(JSON.parse(content));
   });
 

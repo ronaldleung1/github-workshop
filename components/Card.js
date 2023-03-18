@@ -28,7 +28,7 @@ export default function Card({ username, name, quote }) {
         </p>
         <p className="text-slate-700 dark:text-slate-500">
           <a
-            href="https://github.com/googol88"
+            href={`https://github.com/${username}`}
             target="_blank"
             rel="noopener noreferrer"
           >
