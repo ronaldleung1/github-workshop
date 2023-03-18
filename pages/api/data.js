@@ -3,9 +3,9 @@ const path = require("path");
 
 /* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
 export default async (_req, res) => {
-  let data = [];
+  let data = process.cwd();
 
-  const files = fs.readdirSync(
+  /*const files = fs.readdirSync(
     path.join(process.cwd(), "people")
   );
   console.log(process.cwd())
@@ -20,6 +20,7 @@ export default async (_req, res) => {
 
   try {
     data = data.sort(() => Math.random() - 0.5);
-  } catch (err) {}
+  } catch (err) {}*/
+  console.log(data)
   res.status(200).json(data);
 };
