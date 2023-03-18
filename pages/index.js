@@ -1,9 +1,19 @@
+import { useEffect, useState } from "react";
 import Head from 'next/head'
 import Image from 'next/image'
 import Card from '../components/Card'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const [members, setMembers] = useState([]);
+  useEffect(() => {
+    fetch("/api/data")
+      .then((res) => res.json())
+      .then((data) => {
+        setMembers(data);
+      });
+  }, []);
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -23,6 +33,16 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center max-w-4xl">
+          {members.map((member, i) => {
+            return (
+              <Card
+                key={i}
+                username={member.githubUser}
+                name={member.name}
+                quote={member.quote}
+              />
+            );
+          })}
           <Card username="googol88" name="Ronald" quote="Hello world!"/>
           <Card username="googol88" name="Ronald" quote="Hello world!"/>
           <Card username="googol88" name="Ronald" quote="Hello world!"/>
