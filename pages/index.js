@@ -43,10 +43,6 @@ export default function Home() {
               />
             );
           })}
-          <Card username="googol88" name="Ronald" quote="Hello world!"/>
-          <Card username="googol88" name="Ronald" quote="Hello world!"/>
-          <Card username="googol88" name="Ronald" quote="Hello world!"/>
-          <Card username="googol88" name="Ronald" quote="Hello world!"/>
         </div>
       </main>
 
